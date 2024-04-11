@@ -22,16 +22,16 @@ export default function Home() {
   )
 
   return (
-  <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={wallets} autoConnect>
-        <WalletModalProvider>
-          <div className={style.wrapper}>
-            <Header />
-            <PotCard />
-            <Table />
-          </div>
-        </WalletModalProvider>
-      </WalletProvider>
-  </ConnectionProvider>
+    <ConnectionProvider endpoint={endpoint}>
+        <WalletProvider wallets={wallets} autoConnect>
+          <WalletModalProvider>
+            <div className={style.wrapper}>
+              <Header />
+              <PotCard />
+              <Table />
+            </div>
+          </WalletModalProvider>
+        </WalletProvider>
+    </ConnectionProvider>
   );
 }
